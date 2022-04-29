@@ -1,0 +1,17 @@
+a{
+    color: #080337;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.nav-links{
+    width: 0;
+    background-color: #080337;
+    height: 3px;
+    transition: width 0.5s;
+}
+
+a:hover .nav-links{
+    width: 100%;
+}
