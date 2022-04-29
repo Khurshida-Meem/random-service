@@ -7,12 +7,12 @@ import MenuItem from '@mui/material/MenuItem';
 import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import logo from '../../../images/logo-retina.png'
-import './Menu.css'
+import './Navbar.css'
 import { NavLink } from 'react-router-dom';
 import SearchIcon from '@mui/icons-material/Search';
 
 
-const MenuTest = () => {
+const Navbar = () => {
 
     const [anchorEl, setAnchorEl] = React.useState(null);
     const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
@@ -197,4 +197,4 @@ const MenuTest = () => {
     );
 };
 
-export default MenuTest;
+export default Navbar;

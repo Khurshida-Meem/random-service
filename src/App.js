@@ -4,12 +4,12 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import './App.css';
 import Home from './Pages/Home/Home/Home';
 // import Menu from './Pages/Shared/Menu/Menu';
-import MenuTest from './Pages/Shared/Menu/MenuTest';
+import Navbar from './Pages/Shared/Navbar/Navbar';
 
 function App() {
   return (
     <Router>
-      <MenuTest />
+      <Navbar />
       <Switch>
         <Route path='/'>
           <Home />
