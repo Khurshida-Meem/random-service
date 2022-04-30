@@ -1,8 +1,13 @@
-.banner-img{
+.arrow-img {
     position: absolute;
-    top: -60;
+    top: 10%;
+    left: 10px;
+    z-index: 1;
 }
-.arrow-img{
-    position: relative;
-    
+
+.banner-img {
+    position: absolute;
+    top: 0;
+    left: 25px;
+    z-index: 2;
 }

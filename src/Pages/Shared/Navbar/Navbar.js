@@ -136,7 +136,7 @@ const Navbar = () => {
 
     return (
         <Box sx={{ flexGrow: 1 }}>
-            <AppBar style={{ backgroundColor: 'white', boxShadow: 'none' }} position="static">
+            <AppBar style={{ backgroundColor: '#E8E9F1', boxShadow: 'none' }} position="static">
                 <Toolbar>
                     <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
                         <IconButton

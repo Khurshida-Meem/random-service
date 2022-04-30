@@ -2,6 +2,7 @@ import { Box, Container } from '@mui/material';
 import React from 'react';
 import SectionHeaders from '../SectionHeaders/SectionHeaders';
 import banner from '../../../images/banner.svg'
+import arrow from '../../../images/right-arrow.svg'
 import { MouseParallaxChild, MouseParallaxContainer } from 'react-parallax-mouse';
 
 const Banner = () => {
@@ -16,13 +17,22 @@ const Banner = () => {
             </Box>
             <Box>
                 <MouseParallaxContainer>
+                    <MouseParallaxChild factorX={0.03} factorY={0.03} >
+                        <Box sx={{marginTop: '30px', marginLeft: '40px'}}>
+                            <img src={arrow} alt="" loading='lazy' />
+                        </Box>
+                        
+                    </MouseParallaxChild>
                     <MouseParallaxChild factorX={0.03} factorY={0.08}>
-                        <img className='banner-img' src={banner} alt="" width='90%' />
+                        <Box sx={{marginTop: '-90px'}}>
+                            <img className='banner-img' src={banner} alt="" width='90%' />
+                        </Box>
+                        
                     </MouseParallaxChild>
                 </MouseParallaxContainer>
             </Box>
         </Container>
-        
+
     );
 };
 
