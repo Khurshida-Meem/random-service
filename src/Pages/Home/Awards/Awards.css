@@ -1,0 +1,36 @@
+/* .section {
+    width: 100%;
+    min-height: 300px;
+    
+}
+
+.pattern-bottom {
+    position: relative;
+    background-color: #080337;
+    background-image: linear-gradient(315deg,
+    #080337 0%, #080337 74%);
+    
+}
+
+.pattern-bottom:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    background: url('../../../images/wave-final.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* .pattern:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    background: url('../../../images/wave-final.png');
+    background-size: cover;
+    background-repeat: no-repeat; */
+/* }  */
