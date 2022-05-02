@@ -43,7 +43,7 @@ const About = () => {
                 </Grid>
             </Box>
             <Box sx={{textAlign: 'center', marginTop: '60px'}}>
-            <button style={{padding: '16px 24px'}} className='secondary-btn'>More Features</button>
+            <button style={{padding: '16px 24px'}} className='secondary-bg btn'>More Features</button>
             </Box>
         </Container>
     );

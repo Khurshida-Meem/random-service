@@ -14,6 +14,11 @@ const Banner = () => {
         <Container sx={{ display: { md: 'flex' }, alignItems: 'center' }}>
             <Box sx={{ width: { md: '50%' } }}>
                 <SectionHeaders heading={heading} paragraph={paragraph} />
+                <Box sx={{mt: '20px'}}>
+                    <button style={{marginRight: '20px'}} className='btn ternary-bg'>View More</button>
+                <button className='btn primary-bg'>About Us</button>
+                </Box>
+                
             </Box>
             <Box>
                 <MouseParallaxContainer>

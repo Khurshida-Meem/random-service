@@ -40,7 +40,6 @@ const AwardTimeline = () => {
                         <Box sx={award} style={{marginLeft: 'auto'}}>
                             <AwardContent heading={'Link & Content'} />
                         </Box>
-
                     </TimelineContent>
                 </TimelineItem>
                 <TimelineItem>

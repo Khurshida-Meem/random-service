@@ -128,7 +128,7 @@ const Navbar = () => {
                 <SearchIcon />
             </MenuItem>
             <MenuItem>
-                <button className='secondary-btn'>Let's Talk</button>
+                <button className='secondary-bg btn'>Let's Talk</button>
             </MenuItem>
 
         </Menu>
@@ -173,7 +173,7 @@ const Navbar = () => {
                             <SearchIcon sx={{ color: '#080337' }} />
                         </MenuItem>
                         <MenuItem>
-                            <button className='secondary-btn'>Let's Talk</button>
+                            <button className='secondary-bg btn'>Let's Talk</button>
                         </MenuItem>
 
                     </Box>
