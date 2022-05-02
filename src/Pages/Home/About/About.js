@@ -26,7 +26,7 @@ const About = () => {
             </Box>
 
             {/* ======================= Service card =============================== */}
-            <Box sx={{marginTop: '50px'}}>
+            <Box sx={{margin: '50px 20px' }}>
                 <Grid container spacing={{ xs: 2, md: 3 }}>
                     <Grid item sm={12} md={3} sx={{textAlign: 'center'}}>
                         <AboutCard image={about1} heading={'Optimization'} paragraph={cardParagraph} />

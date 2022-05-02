@@ -1,0 +1,12 @@
+.slick-dots li button:before {
+    color: #ff2e57 !important;
+    font-size: 10px !important;
+}
+
+.card{
+    margin: 20px;
+}
+
+.card img{
+    border-radius: 20px;
+}
