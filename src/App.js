@@ -3,8 +3,8 @@ import { Route } from 'react-router-dom';
 import { BrowserRouter as Router } from 'react-router-dom';
 import './App.css';
 import Home from './Pages/Home/Home/Home';
-// import Menu from './Pages/Shared/Menu/Menu';
 import Navbar from './Pages/Shared/Navbar/Navbar';
+import Footer from './Pages/Shared/Footer/Footer';
 
 function App() {
   return (
@@ -15,7 +15,7 @@ function App() {
           <Home />
         </Route>
       </Switch>
-
+      <Footer />
     </Router>
   );
 }
