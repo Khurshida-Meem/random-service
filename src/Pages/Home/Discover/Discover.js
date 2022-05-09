@@ -1,4 +1,4 @@
-import { Box, Container, Typography } from '@mui/material';
+import { Box, Container } from '@mui/material';
 import React from 'react';
 import { MouseParallaxChild, MouseParallaxContainer } from 'react-parallax-mouse';
 import img from '../../../images/todo.svg'
@@ -19,16 +19,14 @@ const container = {
 const Discover = () => {
 
     const heading = 'We Provide Best Digital Services';
-    const paragraph = 'Dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit sed quia.'
+    const paragraph = 'Dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit sed quia.';
+    const sub = 'WHAT WE DO';
 
     return (
         <Box sx={box}>
         <Container sx={container}>
             <Box sx={{ width: { md: '50%' } }}>
-                <Typography sx={{ color: '#080337' }} variant="p" component="div" gutterBottom>
-                    WHAT WE DO
-                </Typography>
-                <SectionHeaders heading={heading} paragraph={paragraph} />
+                <SectionHeaders sub={sub} heading={heading} paragraph={paragraph} />
                 <Box sx={{ mt: '20px' }}>
                     <button className='btn primary-bg'>Discover</button>
                 </Box>

@@ -3,7 +3,7 @@ import './Articles.css'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from 'react-slick';
-import { Container, Box, Typography } from '@mui/material';
+import { Container, Box } from '@mui/material';
 import article1 from '../../../images/article1.jpg'
 import article2 from '../../../images/article2.jpg'
 import article3 from '../../../images/article3.jpg'
@@ -38,16 +38,14 @@ const Articles = () => {
         ]
     };
 
-    const heading = 'Latest Articles'
+    const heading = 'Latest Articles';
+    const sub = 'OUR BLOG';
 
     return (
         <Container sx={{ padding: '100px 30px' }}>
             <Box sx={{ textAlign: 'center' }}>
-                <Typography sx={{ color: '#080337' }} variant="p" component="div" gutterBottom>
-                    OUR BLOG
-                </Typography>
                 <Box sx={{ width: { md: '65%' }, marginLeft: { md: '20%' } }}>
-                    <SectionHeaders heading={heading} />
+                    <SectionHeaders sub={sub} heading={heading} />
                 </Box>
             </Box>
             <Slider {...settings}>

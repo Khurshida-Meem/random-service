@@ -1,4 +1,4 @@
-import { Box, Container, Grid, Typography } from '@mui/material';
+import { Box, Container, Grid } from '@mui/material';
 import React from 'react';
 import SectionHeaders from '../SectionHeaders/SectionHeaders';
 import './About.css';
@@ -11,17 +11,14 @@ import about4 from '../../../images/about4.svg'
 const About = () => {
 
     const heading = `We Offer Expert SEO and Marketing Services`;
-    const cardParagraph = 'Consectetur adipiscing elit, sed do eiusmod tempo.'
-
+    const cardParagraph = 'Consectetur adipiscing elit, sed do eiusmod tempo.';
+    const sub = ' About Us';
 
     return (
         <Container sx={{ marginTop: '150px' }}>
             <Box sx={{ textAlign: 'center' }}>
-                <Typography sx={{ color: '#080337' }} variant="h6" component="div" gutterBottom>
-                    About Us
-                </Typography>
                 <Box sx={{ width: { md: '65%' }, marginLeft: { md: '20%' } }}>
-                    <SectionHeaders heading={heading} />
+                    <SectionHeaders sub={sub} heading={heading} />
                 </Box>
             </Box>
 

@@ -5,13 +5,19 @@ import banner from '../../../images/banner.svg'
 import arrow from '../../../images/right-arrow.svg'
 import { MouseParallaxChild, MouseParallaxContainer } from 'react-parallax-mouse';
 
+const container = {
+    display: { md: 'flex' },
+    alignItems: 'center'
+}
+
+
 const Banner = () => {
 
     const heading = 'Right Social Networking for Marketing';
     const paragraph = 'Consectetur adipiscing elit, sed do eiusmod tempor incididunt dolore magna aliqua quis nostrud exerc.'
 
     return (
-        <Container sx={{ display: { md: 'flex' }, alignItems: 'center' }}>
+        <Container sx={container}>
             <Box sx={{ width: { md: '50%' } }}>
                 <SectionHeaders heading={heading} paragraph={paragraph} />
                 <Box sx={{mt: '20px'}}>
