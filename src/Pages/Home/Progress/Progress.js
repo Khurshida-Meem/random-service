@@ -3,6 +3,17 @@ import { Box } from '@mui/system';
 import React from 'react';
 import SectionHeaders from '../SectionHeaders/SectionHeaders';
 import './Progress.css';
+import SingleProgressBar from './SingleProgressBar';
+import { GoMail } from "react-icons/go";
+
+const email = {
+    color: "#080337",
+    fontSize: '20px',
+    display: 'flex',
+    alignItems: 'center',
+    mt: '50px'
+}
+
 
 const Progress = () => {
 
@@ -12,11 +23,25 @@ const Progress = () => {
 
     return (
         <Container sx={{mt: '100px'}}>
-            <Box sx={{ width: { md: '50%' } }}>
-                <Box>
+            <Box sx={{ display: {md: 'flex'}}}>
+                <Box sx={{ width: { md: '50%' } }}>
                     <SectionHeaders sub={sub} heading={heading} paragraph={paragraph} />
+
+                    <Box sx={email}>
+                        <Box sx={{ml: '30px'}}>
+                            <GoMail />
+                        </Box>
+                        <Box sx={{ml: '70px'}}>
+                            info@example.com
+                         </Box>
+                    </Box>
                 </Box>
-                
+                <Box  sx={{ width: { md: '40%', xs: '80%' }, mt: {md: '250px', xs: '100px'} }}>
+                    <SingleProgressBar completed={80} labelTitle={'Design'} />
+                    <SingleProgressBar completed={90} labelTitle={'Branding'} />
+                    <SingleProgressBar completed={85} labelTitle={'Web Design'} />
+                </Box>
+                    
             </Box>
         </Container>
     );
