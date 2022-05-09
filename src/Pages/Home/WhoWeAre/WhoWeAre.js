@@ -5,6 +5,8 @@ import img from '../../../images/who-we-are.svg'
 import arrow from '../../../images/left-arrow.svg'
 import SectionHeaders from '../SectionHeaders/SectionHeaders';
 import { MouseParallaxChild, MouseParallaxContainer } from 'react-parallax-mouse';
+import Experience from './Experience';
+
 
 const container = {
     display: { md: 'flex' },
@@ -28,20 +30,20 @@ const WhoWeAre = () => {
 
     return (
         <Container sx={container}>
-            
+
             <Box>
                 <MouseParallaxContainer>
-                <MouseParallaxChild factorX={0.03} factorY={0.03} >
+                    <MouseParallaxChild factorX={0.03} factorY={0.03} >
                         <Box sx={arrowImg}>
                             <img className='arrow-img' src={arrow} alt="" loading='lazy' />
                         </Box>
-                        
+
                     </MouseParallaxChild>
                     <MouseParallaxChild factorX={0.03} factorY={0.08}>
-                        <Box sx={{marginTop: '-90px'}}>
+                        <Box sx={{ marginTop: '-90px' }}>
                             <img className='banner-img' src={img} alt="" width='90%' />
                         </Box>
-                        
+
                     </MouseParallaxChild>
                 </MouseParallaxContainer>
             </Box>
@@ -49,8 +51,13 @@ const WhoWeAre = () => {
                 <Box>
                     <SectionHeaders sub={sub} heading={heading} paragraph={paragraph} />
                 </Box>
-                <Box>
-                    
+                <Box sx={{mt: '20px', display: 'flex' }}>
+                    <Box>
+                        <Experience title={'Experience'} value={12} />
+                    </Box>
+                    <Box sx={{ml: '70px'}}>
+                        <Experience title={'People'} value={100} />
+                    </Box>
                 </Box>
             </Box>
         </Container>
