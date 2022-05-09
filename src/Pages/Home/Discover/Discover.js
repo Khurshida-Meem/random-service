@@ -3,6 +3,18 @@ import React from 'react';
 import { MouseParallaxChild, MouseParallaxContainer } from 'react-parallax-mouse';
 import img from '../../../images/todo.svg'
 import SectionHeaders from '../SectionHeaders/SectionHeaders';
+import './Discover.css'
+
+const box = {
+    pt: '100px',
+    mt: '-10px',
+    backgroundColor: '#E8E9F1'
+}
+
+const container = {
+    display: { md: 'flex' },
+    alignItems: 'center'
+}
 
 const Discover = () => {
 
@@ -10,7 +22,8 @@ const Discover = () => {
     const paragraph = 'Dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit sed quia.'
 
     return (
-        <Container sx={{ display: { md: 'flex' }, alignItems: 'center', marginTop: '100px' }}>
+        <Box sx={box}>
+        <Container sx={container}>
             <Box sx={{ width: { md: '50%' } }}>
                 <Typography sx={{ color: '#080337' }} variant="p" component="div" gutterBottom>
                     WHAT WE DO
@@ -31,7 +44,8 @@ const Discover = () => {
                     </MouseParallaxChild>
                 </MouseParallaxContainer>
             </Box>
-        </Container>
+            </Container>
+            </Box>
     );
 };
 
