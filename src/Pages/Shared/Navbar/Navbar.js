@@ -136,7 +136,7 @@ const Navbar = () => {
 
     return (
         <Box sx={{ flexGrow: 1 }}>
-            <AppBar style={{ backgroundColor: '#E8E9F1', boxShadow: 'none' }} position="static">
+            <AppBar style={{ backgroundColor: '#F9FAFF', boxShadow: 'none' }} position="static">
                 <Toolbar>
                     <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
                         <IconButton
@@ -144,7 +144,7 @@ const Navbar = () => {
                             aria-label="show more"
                             aria-controls={mobileMenuId}
                             aria-haspopup="true"
-                            sx={{color: '#080337'}}
+                            sx={{ color: '#080337' }}
                         >
                             <MenuIcon />
                         </IconButton>
@@ -184,7 +184,7 @@ const Navbar = () => {
                             aria-controls={mobileMenuId}
                             aria-haspopup="true"
                             onClick={handleMobileMenuOpen}
-                            sx={{color: '#080337'}}
+                            sx={{ color: '#080337' }}
                         >
                             <MenuIcon />
                         </IconButton>

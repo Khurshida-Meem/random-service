@@ -8,7 +8,7 @@ import './Discover.css'
 const box = {
     pt: '100px',
     mt: '-10px',
-    backgroundColor: '#E8E9F1'
+    backgroundColor: '#F9FAFF'
 }
 
 const container = {
@@ -24,26 +24,26 @@ const Discover = () => {
 
     return (
         <Box sx={box}>
-        <Container sx={container}>
-            <Box sx={{ width: { md: '50%' } }}>
-                <SectionHeaders sub={sub} heading={heading} paragraph={paragraph} />
-                <Box sx={{ mt: '20px' }}>
-                    <button className='btn primary-bg'>Discover</button>
+            <Container sx={container}>
+                <Box sx={{ width: { md: '50%' } }}>
+                    <SectionHeaders sub={sub} heading={heading} paragraph={paragraph} />
+                    <Box sx={{ mt: '20px' }}>
+                        <button className='btn primary-bg'>Discover</button>
+                    </Box>
+
                 </Box>
+                <Box>
+                    <MouseParallaxContainer>
+                        <MouseParallaxChild factorX={0.03} factorY={0.08}>
+                            <Box>
+                                <img className='banner-img' src={img} alt="" width='90%' />
+                            </Box>
 
-            </Box>
-            <Box>
-                <MouseParallaxContainer>
-                    <MouseParallaxChild factorX={0.03} factorY={0.08}>
-                        <Box>
-                            <img className='banner-img' src={img} alt="" width='90%' />
-                        </Box>
-
-                    </MouseParallaxChild>
-                </MouseParallaxContainer>
-            </Box>
+                        </MouseParallaxChild>
+                    </MouseParallaxContainer>
+                </Box>
             </Container>
-            </Box>
+        </Box>
     );
 };
 
